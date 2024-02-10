@@ -13,3 +13,5 @@ const AppRoute = {
 const TIMEOUT = 900;
 
 const RANDOMIZED = false;
+
+export {AppRoute, GAME_TYPES, TIMEOUT, RANDOMIZED}

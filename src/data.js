@@ -1,3 +1,5 @@
+import { RANDOMIZED } from './settings.js';
+
 const cats = [{
   'id': 'YdAqiUkUoWA',
   'url': 'img/cats-1.jpg',
@@ -20,30 +22,6 @@ const cats = [{
   'description': '',
 }, {
   'id': 'OZhYgZh0bAg',
-  'url': 'img/cats-6.jpg',
-  'description': '',
-}, {
-  'id': 'YdAqiUkUoWAa',
-  'url': 'img/cats-1.jpg',
-  'description': '',
-}, {
-  'id': 'hX_hf2lPpUUa',
-  'url': 'img/cats-2.jpg',
-  'description': '',
-}, {
-  'id': 'w1JE5duY62Ma',
-  'url': 'img/cats-3.jpg',
-  'description': '',
-}, {
-  'id': '3tYZjGSBwbka',
-  'url': 'img/cats-4.jpg',
-  'description': '',
-}, {
-  'id': 'NoXUQ54pDaca',
-  'url': 'img/cats-5.jpg',
-  'description': '',
-}, {
-  'id': 'OZhYgZh0bAga',
   'url': 'img/cats-6.jpg',
   'description': '',
 }];
@@ -72,30 +50,6 @@ const cars = [{
   'id': 'OZhYgZh0bAg',
   'url': 'img/cars-6.jpg',
   'description': '',
-}, {
-  'id': 'YdAqiUkUoWAa',
-  'url': 'img/cars-1.jpg',
-  'description': '',
-}, {
-  'id': 'hX_hf2lPpUUa',
-  'url': 'img/cars-2.jpg',
-  'description': '',
-}, {
-  'id': 'w1JE5duY62Ma',
-  'url': 'img/cars-3.jpg',
-  'description': '',
-}, {
-  'id': '3tYZjGSBwbka',
-  'url': 'img/cars-4.jpg',
-  'description': '',
-}, {
-  'id': 'NoXUQ54pDaca',
-  'url': 'img/cars-5.jpg',
-  'description': '',
-}, {
-  'id': 'OZhYgZh0bAga',
-  'url': 'img/cars-6.jpg',
-  'description': '',
 }];
 
 const flowers = [{
@@ -122,30 +76,6 @@ const flowers = [{
   'id': 'OZhYgZh0bAg',
   'url': 'img/flowers-6.jpg',
   'description': '',
-}, {
-  'id': 'YdAqiUkUoWAa',
-  'url': 'img/flowers-1.jpg',
-  'description': '',
-}, {
-  'id': 'hX_hf2lPpUUa',
-  'url': 'img/flowers-2.jpg',
-  'description': '',
-}, {
-  'id': 'w1JE5duY62Ma',
-  'url': 'img/flowers-3.jpg',
-  'description': '',
-}, {
-  'id': '3tYZjGSBwbka',
-  'url': 'img/flowers-4.jpg',
-  'description': '',
-}, {
-  'id': 'NoXUQ54pDaca',
-  'url': 'img/flowers-5.jpg',
-  'description': '',
-}, {
-  'id': 'OZhYgZh0bAga',
-  'url': 'img/flowers-6.jpg',
-  'description': '',
 }];
 
 const imageCollection = {
@@ -165,3 +95,5 @@ const getImages = (type) => {
   const mergedImages = [...imageCollection[type], ...imagePairs];
   return RANDOMIZED ? mergedImages.sort(() => 0.5 - Math.random()) : mergedImages;
 };
+
+export {getImages, results};
